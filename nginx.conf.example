@@ -1,0 +1,29 @@
+# Nginx CDN file server configuration
+
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+    autoindex off;
+
+    location / {
+        limit_except GET HEAD { deny all; }
+        try_files $uri =404;
+        expires 5m;
+        add_header Cache-Control "public, max-age=300, must-revalidate";
+        add_header X-Content-Type-Options nosniff;
+        add_header X-Frame-Options DENY;
+    }
+
+    # Block executable/script files
+    location ~* \.(php|phtml|phar|cgi|pl|py|sh|exe|dll|so|bin|bat|cmd|ps1)$ {
+        deny all;
+        return 404;
+    }
+
+    location /health {
+        access_log off;
+        return 200 "OK";
+        add_header Content-Type text/plain;
+    }
+}

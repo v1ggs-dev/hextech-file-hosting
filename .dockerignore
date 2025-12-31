@@ -1,0 +1,6 @@
+# Docker
+.env
+hextech.db*
+node_modules/
+dist/
+VERSION_CONTROL.md

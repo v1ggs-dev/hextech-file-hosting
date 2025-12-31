@@ -1,0 +1,49 @@
+# Dependencies
+user/node_modules/
+
+# Build outputs
+user/dist/
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Environment files (keep .env.example)
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archives (don't commit large files)
+*.zip
+*.tar.gz
+*.rar
+
+# Compiled Go binaries
+*.exe
+hextech-panel
+
+# Docker volumes (if mounted locally)
+cdn-files/
+data/
+
+# Personal deployment files (use .example versions for reference)
+docker-compose.yml
+nginx.conf
+
+# Unpublished development files
+UNPUBLISHED/
