@@ -11,7 +11,7 @@ Upload, organize, and serve files through your own infrastructure with enterpris
 [![Go](https://img.shields.io/badge/Go-1.21-00ADD8?logo=go&logoColor=white)](https://go.dev/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 
-[**Documentation**](https://hextech-app.v1ggs.lol) • [**Quick Start**](#quick-start) • [**Features**](#features) • [**Architecture**](#architecture)
+[**Documentation**](https://hextech-app.v1ggs.lol) • [**Quick Start**](#-quick-start) • [**Features**](#-features) • [**Architecture**](#️-architecture)
 
 </div>
 
